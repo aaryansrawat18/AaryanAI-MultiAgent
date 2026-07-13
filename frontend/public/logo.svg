@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="aaryanGrad" x1="8" y1="4" x2="56" y2="60" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#67E8F9"/>
+      <stop offset="0.45" stop-color="#818CF8"/>
+      <stop offset="1" stop-color="#A78BFA"/>
+    </linearGradient>
+    <linearGradient id="aaryanCore" x1="24" y1="28" x2="40" y2="44" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E0F2FE"/>
+      <stop offset="1" stop-color="#C4B5FD"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="#111318"/>
+  <rect x="1" y="1" width="62" height="62" rx="15" stroke="url(#aaryanGrad)" stroke-opacity="0.35" stroke-width="1"/>
+  <!-- stylized A -->
+  <path
+    d="M32 12L48 50H41.2L37.6 40.4H26.4L22.8 50H16L32 12Z"
+    fill="url(#aaryanGrad)"
+  />
+  <path
+    d="M28.2 35.6H35.8L32 25.4L28.2 35.6Z"
+    fill="#0d0f14"
+  />
+  <!-- neural nodes -->
+  <circle cx="18" cy="22" r="2.2" fill="url(#aaryanCore)"/>
+  <circle cx="46" cy="22" r="2.2" fill="url(#aaryanCore)"/>
+  <circle cx="32" cy="52" r="2.4" fill="url(#aaryanCore)"/>
+  <path d="M20 23.2L28.5 30.2" stroke="#67E8F9" stroke-opacity="0.55" stroke-width="1.2" stroke-linecap="round"/>
+  <path d="M44 23.2L35.5 30.2" stroke="#A78BFA" stroke-opacity="0.55" stroke-width="1.2" stroke-linecap="round"/>
+  <path d="M32 48.5V41" stroke="#818CF8" stroke-opacity="0.5" stroke-width="1.2" stroke-linecap="round"/>
+</svg>

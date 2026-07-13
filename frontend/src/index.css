@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Sora", ui-sans-serif, system-ui, sans-serif;
+  --color-surface: #0d0f14;
+  --color-surface-raised: #13151c;
+  --color-surface-muted: #111318;
+  --color-accent: #818cf8;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  background: #0d0f14;
+  color: #e2e8f0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* subtle ambient mesh for auth / empty states */
+.brand-glow {
+  background:
+    radial-gradient(ellipse 80% 60% at 50% -10%, rgba(129, 140, 248, 0.18), transparent 55%),
+    radial-gradient(ellipse 50% 40% at 80% 100%, rgba(103, 232, 249, 0.08), transparent 50%),
+    radial-gradient(ellipse 40% 30% at 10% 90%, rgba(167, 139, 250, 0.1), transparent 45%);
+}
