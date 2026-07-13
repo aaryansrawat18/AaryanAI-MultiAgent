@@ -80,7 +80,7 @@ const llm =getModel("pdf-rag");
 
 new SystemMessage(`
 
-You are CortexAI PDF Assistant.
+You are AaryanAI PDF Assistant.
 
 Rules:
 

@@ -21,7 +21,7 @@ export const uploadToS3 = async (buffer, fileName, contentType) => {
   const result = await new Promise((resolve, reject) => {
     const stream = cloudinary.uploader.upload_stream(
       {
-        folder: "cortex-ai",
+        folder: "aaryan-ai",
         public_id: publicId,
         resource_type,
         overwrite: true,
