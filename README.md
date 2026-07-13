@@ -2,7 +2,7 @@
 
 **Think clearer. Build faster.**
 
-AaryanAI is a multi-agent AI platform for chat, coding, search, PDF/PPT generation, vision, image generation, and billing — with a React frontend and a microservices backend behind an API gateway.
+AaryanAI is a multi-agent AI platform for chat, coding, search, PDF/PPT generation, vision, image generation, and billing â€” with a React frontend and a microservices backend behind an API gateway.
 
 **Repo:** [aaryansrawat18/AaryanAI-MultiAgent](https://github.com/aaryansrawat18/AaryanAI-MultiAgent)
 
@@ -27,16 +27,16 @@ AaryanAI is a multi-agent AI platform for chat, coding, search, PDF/PPT generati
 
 ```
 AaryanAI-MultiAgent/
-├── frontend/                 # React + Vite + Redux client
-└── backend/
-    ├── gateway/              # API gateway (auth + proxy)
-    ├── shared/redis/         # Shared Redis helper
-    ├── docker-compose.yml    # Local Redis
-    └── services/
-        ├── auth/             # Users + Firebase
-        ├── chat/             # Conversations + messages
-        ├── agent/            # LangGraph supervisor + agents
-        └── billing/          # Credits + Razorpay
+â”œâ”€â”€ frontend/                 # React + Vite + Redux client
+â””â”€â”€ backend/
+    â”œâ”€â”€ gateway/              # API gateway (auth + proxy)
+    â”œâ”€â”€ shared/redis/         # Shared Redis helper
+    â”œâ”€â”€ docker-compose.yml    # Local Redis
+    â””â”€â”€ services/
+        â”œâ”€â”€ auth/             # Users + Firebase
+        â”œâ”€â”€ chat/             # Conversations + messages
+        â”œâ”€â”€ agent/            # LangGraph supervisor + agents
+        â””â”€â”€ billing/          # Credits + Razorpay
 ```
 
 ---
@@ -50,7 +50,7 @@ flowchart TB
   end
 
   subgraph Gateway
-    GW[API Gateway<br/>Express · CORS · Auth middleware]
+    GW[API Gateway<br/>Express Â· CORS Â· Auth middleware]
   end
 
   subgraph Services
@@ -177,7 +177,7 @@ flowchart LR
   G -->|/api/chat| CH[Chat]
   G -->|/api/agent| AG[Agent]
   G -->|/api/billing| BI[Billing]
-  G -.->|/api/auth/internal| X[Blocked · 403]
+  G -.->|/api/auth/internal| X[Blocked Â· 403]
 ```
 
 Protected routes (`/api/me`, `/api/chat`, `/api/agent`, `/api/billing`) require auth middleware. Internal auth routes are never exposed through the gateway.
@@ -259,7 +259,7 @@ Point the frontend API base URL at the gateway.
 
 ## Security
 
-- Secrets and service accounts stay local / in a secret manager — not in git.
+- Secrets and service accounts stay local / in a secret manager â€” not in git.
 - Gateway blocks `/api/auth/internal`.
 - User-facing agent/chat/billing routes go through auth middleware.
 
@@ -267,4 +267,4 @@ Point the frontend API base URL at the gateway.
 
 ## License
 
-ISC — see package manifests for details.
+ISC â€” see package manifests for details.
